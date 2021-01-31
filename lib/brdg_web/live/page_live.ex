@@ -13,14 +13,14 @@ defmodule BrdgWeb.PageLive do
 
   @impl true
   def handle_event("update", session, socket) do
-    IO.inspect session
-    IO.inspect socket
+    IO.inspect(session)
+    IO.inspect(socket)
     {:noreply, socket}
   end
 
   @impl true
   def handle_event("save", _session, socket) do
-    IO.inspect socket
+    IO.inspect(socket)
     {:noreply, socket}
   end
 
