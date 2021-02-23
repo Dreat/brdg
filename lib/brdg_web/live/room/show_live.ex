@@ -12,14 +12,14 @@ defmodule BrdgWeb.Room.ShowLive do
   def render(assigns) do
     ~L"""
     <h1><%= @room.title %></h1>
-    <h2>Select bet 
+    <h2>Select bid 
     <%= if @current.is_pass do %>
       pass
       <% else %>
     <%= @current.suit %><%= @current.value %>
       <% end %>
     <h2>
-    <h2>Current bet 
+    <h2>Current bid 
     <%= if @current.is_pass do %>
       pass
       <% else %>
@@ -43,7 +43,7 @@ defmodule BrdgWeb.Room.ShowLive do
 
     <button phx-click="pass">pass</button>
 
-    <button phx-click="bet">bet</button>
+    <button phx-click="bid">bid</button>
     """
   end
 
